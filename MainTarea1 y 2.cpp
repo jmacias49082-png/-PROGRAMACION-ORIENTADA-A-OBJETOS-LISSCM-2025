@@ -2,7 +2,7 @@
 #include "SegundaTarea.h"
 
 int main() {
-    // 👇 Elige qué tarea correr (deja UNA descomentada)
+    //  Elige qué tarea correr (deja UNA descomentada)
   //  MainPrimeraTarea();    // corre Tarea 1
    MainSegundaTarea(); // corre Tarea 2
 
