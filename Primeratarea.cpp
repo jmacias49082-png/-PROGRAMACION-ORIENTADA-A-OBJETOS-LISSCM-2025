@@ -3,10 +3,10 @@
 #include <ctime>
 using namespace std;
 
-// Ajusta domingo(0)..s·bado(6) a lunes(0)..domingo(6)
+// Ajusta domingo(0)..s√°bado(6) a lunes(0)..domingo(6)
 int diaLunesBase(int tm_wday) { return (tm_wday + 6) % 7; }
 
-// Obtiene dÌa/hora/minuto actuales (MSVC con localtime_s)
+// Obtiene d√≠a/hora/minuto actuales (MSVC con localtime_s)
 void obtenerAhora(int& dia, int& hora, int& minuto) {
     time_t t = time(nullptr);
     tm lt{};
@@ -16,7 +16,7 @@ void obtenerAhora(int& dia, int& hora, int& minuto) {
     minuto = lt.tm_min;
 }
 
-const char* nombreDia(int dia) {
+const char* NombreDia(int dia) {
     static const char* nombres[7] = { "lunes","martes","miercoles","jueves","viernes","sabado","domingo" };
     if (dia < 0 || dia > 6) return "dia invalido";
     return nombres[dia];
@@ -35,7 +35,7 @@ void martesODespuesDeMediodia(int dia, int hora) {
     else if (hora >= 12) cout << "No es martes, pero ya paso el mediodia\n";
 }
 
-void recorrerSemana(int dia_actual) {
+void RecorrerSemana(int diaActual) {
     for (int i = 0; i < 7; ++i) {
         const char* nd = nombreDia(i);
         if (i == dia_actual) cout << "Hoy SI es " << nd << '\n';
