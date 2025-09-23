@@ -2,9 +2,8 @@
 #include "SegundaTarea.h"
 
 int main() {
-    // 👇 Elige qué tarea correr (deja UNA descomentada)
-  //  MainPrimeraTarea();    // corre Tarea 1
-   MainSegundaTarea(); // corre Tarea 2
-
+    // Deja activa solo una:
+   MainPrimeraTarea();    // correr Tarea 1
+  //MainSegundaTarea();
     return 0;
 }

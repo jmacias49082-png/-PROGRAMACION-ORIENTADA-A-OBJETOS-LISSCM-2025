@@ -1,12 +1,13 @@
 #pragma once
 
 
+int DiaLunesBase(int diaSemana);
+void ObtenerAhora(int& dia, int& hora, int& minuto);
+const char* NombreDia(int dia);
+void EsLunes(int dia);
+void JuevesAntesMediodia(int dia, int hora);
+void MartesODespuesDeMediodia(int dia, int hora);
+void RecorrerSemana(int diaActual);
 
-int diaLunesBase(int tm_wday);
-void obtenerAhora(int& dia, int& hora, int& minuto);
-const char* nombreDia(int dia);
-void esLunes(int dia);
-void juevesAntesMediodia(int dia, int hora);
-void martesODespuesDeMediodia(int dia, int hora);
-void recorrerSemana(int dia_actual);
+
 void MainPrimeraTarea();
